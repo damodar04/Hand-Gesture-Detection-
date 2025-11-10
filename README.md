@@ -61,6 +61,69 @@ With the power of **OpenCV**, **MediaPipe**, and **PyAutoGUI**, your **webcam** 
 ## ⚙️ Installation
 
 ### 🧰 Step 1 — Clone the repository
-```bash
+bash
 git clone https://github.com/damodar04/hand-gesture-control.git
-cd hand-gesture-control
+cd hand-gesture-control  
+
+---
+
+### 📦 Step 2 — Install dependencies
+pip install -r requirements.txt
+
+
+If you don’t have a requirements file:
+
+pip install opencv-python mediapipe pyautogui numpy screen-brightness-control pycaw
+
+▶️ Step 3 — Run the project
+python app.py
+
+
+Or directly run the controller:
+
+python Gesture_Controller.py
+
+🧠 How It Works
+
+The webcam continuously captures live video frames.
+
+MediaPipe identifies 21 hand landmarks in real time.
+
+Detected gestures (like finger positions or distances) are mapped to specific actions.
+
+PyAutoGUI performs system-level tasks such as mouse, volume, and brightness control.
+
+Examples of Gestures:
+
+Gesture	Action
+🖐️	Move mouse cursor
+✌️	Capture screenshot
+👍	Increase volume
+👎	Decrease volume
+📸 Demo (Optional)
+
+You can embed a demo GIF or YouTube video link here.
+
+🎥 Example Demo:
+👉 Coming Soon: "Hand Gesture Control in Action"
+
+🔒 License
+
+This project is licensed under the MIT License — see the LICENSE
+ file for details.
+
+👨‍💻 Author
+
+Damodar Bhawsar
+💼 Data Science & Automation Enthusiast
+<p align="center">
+  <img src="damodar.7974@gmail.com" width="700px" alt="Demo GIF">
+</p>
+
+⭐ Acknowledgements
+
+MediaPipe by Google
+
+PyAutoGUI Documentation
+
+OpenCV
