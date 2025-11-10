@@ -1,101 +1,104 @@
-🖐️ Hand Gesture Control System
+<h1 align="center">🖐️ Hand Gesture Control System</h1>
 
-A Computer Vision + Python project that allows users to control their entire computer using hand gestures captured through a webcam.
-This includes actions like controlling volume, brightness, screenshots, app launching, file opening, and more — all hands-free!
+<p align="center">
+  <b>Control your entire computer using just your hand gestures 🖐️ — no touch, no mouse, just movement!</b><br>
+  A Computer Vision + Python project for hands-free control of volume, brightness, screenshots, apps, and more.
+</p>
 
-🚀 Project Overview
+---
 
-The Hand Gesture Control System uses real-time hand tracking to interpret specific gestures and perform predefined system actions.
-It leverages OpenCV, MediaPipe, and PyAutoGUI to create a fully interactive experience where your hand becomes your controller.
+## 🚀 Project Overview
+The **Hand Gesture Control System** uses real-time **hand tracking** to interpret gestures and perform computer actions.  
+With the power of **OpenCV**, **MediaPipe**, and **PyAutoGUI**, your **webcam** becomes a smart controller — allowing you to interact with your PC naturally and efficiently.
 
-✨ Key Features
+<p align="center">
+  <img src="https://github.com/damodar04/hand-gesture-control/assets/placeholder-demo.gif" width="700px" alt="Demo GIF">
+</p>
 
-🎚️ Volume Control — Increase or decrease system volume using hand distance.
+---
 
-🌞 Brightness Control — Adjust screen brightness with gestures.
+## ✨ Features
 
-📸 Screenshot Capture — Instantly take screenshots with a simple gesture.
+| 💡 Feature | 🎯 Description |
+|------------|----------------|
+| 🎚️ **Volume Control** | Control system volume using finger distance. |
+| 🌞 **Brightness Control** | Adjust screen brightness with simple gestures. |
+| 📸 **Screenshot Capture** | Take instant screenshots with a specific hand pose. |
+| 🗂️ **App & File Launching** | Open apps or files using gestures. |
+| 🔄 **Glove Mode** | Use with or without a glove for flexibility. |
+| 🧠 **AI-Powered Detection** | Uses MediaPipe’s landmark model for accurate tracking. |
 
-🗂️ App & File Launching — Open applications or files with specific hand signals.
+---
 
-🔄 Gesture Recognition (with or without gloves) — Works with bare hands or with a glove setup for accuracy.
+## 🧩 Project Structure
 
-🧠 AI-Powered Gesture Detection — Uses MediaPipe Hand Landmark model for precise recognition.
-
-🧩 Project Files
-File Name	Description
-app.py	Main application file (entry point). Runs the Streamlit or main interface if implemented.
-Gesture_Controller.py	Core script for detecting hand gestures and controlling system functions.
-Gesture_Controller_Gloved.py	Alternate version for gesture detection using a glove setup.
-4bytes.py	Utility or helper script for supporting functionalities.
-tempCodeRunnerFile.py	Temporary file used during development (can be ignored).
-LICENSE	Project license file.
-README.md	Project documentation (this file).
+```bash
+📦 hand-gesture-control
+├── app.py                        # Main application entry point
+├── Gesture_Controller.py         # Core gesture detection and system control
+├── Gesture_Controller_Gloved.py  # Gesture detection for glove input
+├── 4bytes.py                     # Utility/helper script
+├── tempCodeRunnerFile.py         # Temporary development file
+├── LICENSE                       # Project license
+└── README.md                     # Project documentation
 🛠️ Technologies Used
-
-Python 3.8+
-
-OpenCV – for real-time image processing
-
-MediaPipe – for hand landmark tracking
-
-PyAutoGUI – to control mouse, keyboard, and system events
-
-NumPy – for data processing
-
-Screen-Brightness-Control / pycaw – for brightness and audio control
+Technology	Purpose
+🐍 Python 3.8+	Core programming language
+👁️ OpenCV	Real-time image & video processing
+✋ MediaPipe	Hand landmark detection & tracking
+🖱️ PyAutoGUI	System control automation
+🔊 pycaw	Audio control
+💡 screen-brightness-control	Brightness management
+🔢 NumPy	Mathematical computations
 
 ⚙️ Installation
-1️⃣ Clone this repository
+🧰 1. Clone the repository
+bash
+Copy code
 git clone https://github.com/damodar04/hand-gesture-control.git
 cd hand-gesture-control
-
-2️⃣ Install the required dependencies
+📦 2. Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
+If you don’t have a requirements file yet:
 
-
-(If there’s no requirements file, install manually:)
-
+bash
+Copy code
 pip install opencv-python mediapipe pyautogui numpy screen-brightness-control pycaw
-
-3️⃣ Run the project
+▶️ 3. Run the project
+bash
+Copy code
 python app.py
+or directly run the controller:
 
-
-or run the controller directly:
-
+bash
+Copy code
 python Gesture_Controller.py
-
 🧠 How It Works
+The webcam continuously captures live video.
 
-The webcam captures live video frames.
+MediaPipe identifies 21 hand landmarks in real-time.
 
-MediaPipe detects 21 hand landmarks in each frame.
+Gestures (based on finger distance/position) are mapped to predefined actions.
 
-Gestures (like finger positions or distances) are mapped to actions.
+PyAutoGUI executes the system command.
 
-PyAutoGUI executes the respective computer command.
-
-Example:
-🖐️ → Move mouse
-✌️ → Take screenshot
-👍 → Increase volume
-👎 → Decrease volume
+Gesture	Action
+🖐️	Move mouse cursor
+✌️	Capture screenshot
+👍	Increase volume
+👎	Decrease volume
 
 🔒 License
-
-This project is licensed under the MIT License — see the LICENSE
- file for details.
+This project is licensed under the MIT License — see the LICENSE file for details.
 
 👨‍💻 Author
-
 Damodar Bhawsar
 💼 Data Science & Automation Enthusiast
 📧 damodar.7974@gmail.com
-🔗 https://github.com/damodar04
 
 ⭐ Acknowledgements
-
 MediaPipe by Google
 
 PyAutoGUI Documentation
