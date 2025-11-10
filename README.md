@@ -32,75 +32,35 @@ With the power of **OpenCV**, **MediaPipe**, and **PyAutoGUI**, your **webcam** 
 
 ## 🧩 Project Structure
 
-```bash
-📦 hand-gesture-control
-├── app.py                        # Main application entry point
-├── Gesture_Controller.py         # Core gesture detection and system control
-├── Gesture_Controller_Gloved.py  # Gesture detection for glove input
-├── 4bytes.py                     # Utility/helper script
-├── tempCodeRunnerFile.py         # Temporary development file
-├── LICENSE                       # Project license
-└── README.md                     # Project documentation
-🛠️ Technologies Used
-Technology	Purpose
-🐍 Python 3.8+	Core programming language
-👁️ OpenCV	Real-time image & video processing
-✋ MediaPipe	Hand landmark detection & tracking
-🖱️ PyAutoGUI	System control automation
-🔊 pycaw	Audio control
-💡 screen-brightness-control	Brightness management
-🔢 NumPy	Mathematical computations
+**Folder Tree:**
+- 📁 **hand-gesture-control/**
+  - 📄 **app.py** → Main application entry point.
+  - 📄 **Gesture_Controller.py** → Core gesture detection and system control.
+  - 📄 **Gesture_Controller_Gloved.py** → Gesture detection version for glove input.
+  - 📄 **4bytes.py** → Helper/utility script.
+  - 📄 **tempCodeRunnerFile.py** → Temporary file used during development.
+  - 📄 **LICENSE** → License file for the project.
+  - 📄 **README.md** → This documentation file.
 
-⚙️ Installation
-🧰 1. Clone the repository
-bash
-Copy code
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|-------------|----------|
+| 🐍 **Python 3.8+** | Core programming language |
+| 👁️ **OpenCV** | Real-time image & video processing |
+| ✋ **MediaPipe** | Hand landmark detection & tracking |
+| 🖱️ **PyAutoGUI** | System control automation |
+| 🔊 **pycaw** | Audio control |
+| 💡 **screen-brightness-control** | Brightness management |
+| 🔢 **NumPy** | Mathematical computations |
+
+---
+
+## ⚙️ Installation
+
+### 🧰 Step 1 — Clone the repository
+```bash
 git clone https://github.com/damodar04/hand-gesture-control.git
 cd hand-gesture-control
-📦 2. Install dependencies
-bash
-Copy code
-pip install -r requirements.txt
-If you don’t have a requirements file yet:
-
-bash
-Copy code
-pip install opencv-python mediapipe pyautogui numpy screen-brightness-control pycaw
-▶️ 3. Run the project
-bash
-Copy code
-python app.py
-or directly run the controller:
-
-bash
-Copy code
-python Gesture_Controller.py
-🧠 How It Works
-The webcam continuously captures live video.
-
-MediaPipe identifies 21 hand landmarks in real-time.
-
-Gestures (based on finger distance/position) are mapped to predefined actions.
-
-PyAutoGUI executes the system command.
-
-Gesture	Action
-🖐️	Move mouse cursor
-✌️	Capture screenshot
-👍	Increase volume
-👎	Decrease volume
-
-🔒 License
-This project is licensed under the MIT License — see the LICENSE file for details.
-
-👨‍💻 Author
-Damodar Bhawsar
-💼 Data Science & Automation Enthusiast
-📧 damodar.7974@gmail.com
-
-⭐ Acknowledgements
-MediaPipe by Google
-
-PyAutoGUI Documentation
-
-OpenCV
